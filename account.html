@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad e-commerce.com products page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="e-commerce.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="navbar">
+            <div id="logo" class="logo">
+                <a href="e-commerce.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav id="nav" class="nav">
+                <ul id="menuitems">
+                    <li><a href="e-commerce.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="product details.html">About</a></li>
+                    <li><a href="account.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu" id="menu">
+        </div>
+    </div>
+
+    <!-- account page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span id="login">Login</span>
+                            <span id="register">Register</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+                            <strong>SUCCESS!</strong> Your Form Submitted successfully.
+                            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button> -->
+                        </div>
+                        <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+                            <strong>ERROR!</strong> Your Form Is Not Submitted Due To Invalid Info.
+                            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button> -->
+                        </div>
+
+                        <form id="loginform">
+                            <input type="text" placeholder="UserName" id="username">
+                            <small id="validuname" class="form-text text-muted invalid-feedback">
+                                Username must be a valid
+                            </small>
+                            <input type="password" placeholder="Password" id="password">
+                            <small id="validpassword" class="form-text text-muted invalid-feedback">
+                                Password must greater than 8 characters
+                            </small>
+                            <button type="submit" class="btn" id="loginbtn">Login</button>
+                            <a href="#">Forgot Password</a>
+                        </form>
+                        <form id="regform">
+                            <input type="text" placeholder="UserName" id="userregname">
+                            <small id="validuname" class="form-text text-muted invalid-feedback">
+                                Username must be a valid
+                            </small>
+                            <input type="email" placeholder="Email" id="email">
+                            <small id="validemail" class="form-text text-muted invalid-feedback">
+                                Email must be valid
+                            </small>
+                            <input type="password" placeholder="Password" id="regpassword">
+                            <small id="validpassword" class="form-text text-muted invalid-feedback">
+                                Password must greater than 8 characters
+                            </small>
+                            <button type="submit" class="btn" id="regbtn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-btn" style="text-align: center; margin-top: 54px; color: rgb(88, 87, 87);">
+        <a href="e-commerce.html"><span>Prev</span></a>
+        <a href="e-commerce.html"><span>1</span></a>
+        <a href="products.html"><span>2</span></a>
+        <a href="product details.html"><span>3</span></a>
+        <a href="cart.html"><span>4</span></a>
+        <a href="account.html"><span>5</span></a>
+        <a href="account.html"><span>Next</span></a>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and ios mobile phones.</p>
+                    <div class="applogo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo-white.png">
+                    <p>Our purpose is to sustainably make the pleasure and <br> bebefits of sports accessible to the
+                        many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links:</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright &copy;2022--AhmadStore</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+    <script src="e-commerce.js"></script>
+
+    <script>
+        let regform = document.getElementById('regform');
+        let loginform = document.getElementById('loginform');
+        let login = document.getElementById('login');
+        let register = document.getElementById('register');
+        let indicator = document.getElementById('indicator');
+
+
+        register.addEventListener('click', (e) => {
+            regform.style.transform = 'translateX(0px)';
+            loginform.style.transform = 'translateX(0px)';
+            indicator.style.transform = 'translateX(100px)';
+        });
+
+        login.addEventListener('click', (e) => {
+            regform.style.transform = 'translateX(300px)';
+            loginform.style.transform = 'translateX(300px)';
+            indicator.style.transform = 'translateX(0px)';
+        });
+
+
+        let username=document.getElementById('username');
+        let password=document.getElementById('password');
+
+        let validuname=false;
+        let validpassword=false;
+
+        username.addEventListener('blur',(e)=>{
+            e.preventDefault();
+            let regx=/^([a-zA-Z0-9]+){3,10}$/;
+            let str=username.value;
+            if(regx.test(str)){
+                username.classList.remove('is-invalid');
+                validuname=true;
+            }
+            else{
+                username.classList.add('is-invalid');
+                validuname=false;
+            }
+        })
+
+        password.addEventListener('blur',(e)=>{
+            e.preventDefault();
+            let regx=/^([a-zA-Z0-9]+){8,16}$/;
+            let str=password.value;
+            if(regx.test(str)){
+                password.classList.remove('is-invalid');
+                validpassword=true;
+            }
+            else{
+                password.classList.add('is-invalid');
+                validpassword=false;
+            }
+        })
+
+        let loginbtn=document.getElementById('loginbtn');
+        loginbtn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            if(validuname && validpassword){
+                let success=document.getElementById('success');
+                success.classList.add('show');
+
+                let failure=document.getElementById('failure');
+                failure.classList.remove('show');
+                success.classList.add('show');
+            }
+            else{
+                let failure=document.getElementById('failure');
+                failure.classList.add('show');
+
+                let success=document.getElementById('success');
+                success.classList.remove('show');
+                failure.classList.add('show');
+            }
+        })
+
+
+
+        let userregname=document.getElementById('userregname');
+        let regpassword=document.getElementById('regpassword');
+        let email=document.getElementById('email');
+
+        let validregname=false;
+        let validregpassword=false;
+        let validemail=false;
+
+        userregname.addEventListener('blur',(e)=>{
+            e.preventDefault();
+            let regx=/^([a-zA-Z0-9]+){3,10}$/;
+            let str=userregname.value;
+            if(regx.test(str)){
+                userregname.classList.remove('is-invalid');
+                validregname=true;
+            }
+            else{
+                userregname.classList.add('is-invalid');
+                validregname=false;
+            }
+        })
+
+        regpassword.addEventListener('blur',(e)=>{
+            e.preventDefault();
+            let regx=/^([a-zA-Z0-9]+){8,16}$/;
+            let str=regpassword.value;
+            if(regx.test(str)){
+                regpassword.classList.remove('is-invalid');
+                validregpassword=true;
+            }
+            else{
+                regpassword.classList.add('is-invalid');
+                validregpassword=false;
+            }
+        })
+
+        email.addEventListener('blur',(e)=>{
+            e.preventDefault();
+            let regx=/^([a-zA-Z0-9\-\.]+)\@([a-zA-Z]+)\.([a-zA-Z]+){3,7}$/;
+            let str=email.value;
+            if(regx.test(str)){
+                email.classList.remove('is-invalid');
+                validemail=true;
+            }
+            else{
+                email.classList.add('is-invalid');
+                validemail=false;
+            }
+        })
+
+        let regbtn=document.getElementById('regbtn');
+        regbtn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            if(validregname && validregpassword && validemail){
+                let success=document.getElementById('success');
+                success.classList.add('show');
+
+                let failure=document.getElementById('failure');
+                failure.classList.remove('show');
+                success.classList.add('show');
+            }
+            else{
+                let failure=document.getElementById('failure');
+                failure.classList.add('show');
+
+                let success=document.getElementById('success');
+                success.classList.remove('show');
+                failure.classList.add('show');
+            }
+        })
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

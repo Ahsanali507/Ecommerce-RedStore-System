@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad e-commerce.com products page</title>
+    <link rel="stylesheet" href="e-commerce.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="navbar">
+            <div id="logo" class="logo">
+                <a href="e-commerce.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav id="nav" class="nav">
+                <ul id="menuitems">
+                    <li><a href="e-commerce.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="product details.html">About</a></li>
+                    <li><a href="account.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu" id="menu">
+        </div>
+    </div>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="gallery-1.jpg" width="100%" id="product-img">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="gallery-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home /T-Shirt</p>
+                <h1>Red printed T-shirt By HRX</h1>
+                <h4 id="cartprice">$50.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input id="cartquantity" type="number" value="1">
+                <a href="#" id="addtocartbtn" class="btn">Add To Cart</a>
+                <a href="#" id="resetcart" class="btn">Reset</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, explicabo sed. Ducimus tenetur iure
+                    ipsum rem architecto sit saepe doloribus impedit sequi eligendi. Error! Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Quam, magni.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p><a href="#hide" id="toviewmore" class="btn">View More</a></p>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="product-9.jpg">
+                <h4>Black Brand Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-10.jpg">
+                <h4>Black Soft Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-11.jpg">
+                <h4>Soft Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-12.jpg">
+                <h4>Black Printed Trouser</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+
+        <div class="small-container">
+            <div class="row row-2 hide-unhide">
+                <h2>Related Products</h2>
+                <p>
+                    <!-- <a href="#" id="tohide" class="btn">To hide</a> -->
+                    <button id="hide" class="btn">Hide</button>
+                    <button id="unhide" class="btn">Unhide</button>
+                </p>
+            </div>
+        </div>
+
+        <div id="viewmore1" class="row viewmore">
+            <div class="col-4">
+                <img src="product-1.jpg">
+                <h4>Black Brand Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-2.jpg">
+                <h4>Black Soft Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-3.jpg">
+                <h4>Soft Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-4.jpg">
+                <h4>Black Printed Trouser</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+
+        <div id="viewmore2" class="row viewmore">
+            <div class="col-4">
+                <img src="product-5.jpg">
+                <h4>Black Brand Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-6.jpg">
+                <h4>Black Soft Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-7.jpg">
+                <h4>Soft Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="product-8.jpg">
+                <h4>Black Printed Trouser</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-btn" style="text-align: center;">
+        <a href="e-commerce.html"><span>Prev</span></a>
+        <a href="e-commerce.html"><span>1</span></a>
+        <a href="products.html"><span>2</span></a>
+        <a href="product details.html"><span>3</span></a>
+        <a href="cart.html"><span>4</span></a>
+        <a href="account.html"><span>5</span></a>
+        <a href="account.html"><span>Next</span></a>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and ios mobile phones.</p>
+                    <div class="applogo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo-white.png">
+                    <p>Our purpose is to sustainably make the pleasure and <br> bebefits of sports accessible to the
+                        many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links:</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright &copy;2022--AhmadStore</p>
+        </div>
+    </div>
+
+
+
+    <script src="e-commerce.js"></script>
+
+    <script>
+
+        // for add cart
+        let cartprice = document.getElementById('cartprice');
+        let cartquantity = document.getElementById('cartquantity');
+        let addtocartbtn = document.getElementById('addtocartbtn');
+        addtocartbtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (cartquantity.value == 2) {
+                cartprice.innerHTML = "$" + 100 + "." + 0 + "" + 0;
+            }
+            else if (cartquantity.value == 3) {
+                cartprice.innerHTML = "$" + 150 + "." + 0 + "" + 0;
+            }
+            else if (cartquantity.value == 4) {
+                cartprice.innerHTML = "$" + 200 + "." + 0 + "" + 0;
+            }
+            else if (cartquantity.value == 5) {
+                cartprice.innerHTML = "$" + 250 + "." + 0 + "" + 0;
+            }
+            else if (cartquantity.value == 6) {
+                cartprice.innerHTML = "$" + 300 + "." + 0 + "" + 0;
+            }
+            else if (cartquantity.value == 7) {
+                cartprice.innerHTML = "$" + 350 + "." + 0 + "" + 0;
+            }
+            else if (cartquantity.value == 8) {
+                cartprice.innerHTML = "$" + 400 + "." + 0 + "" + 0;
+            }
+            else {
+                cartprice.innerHTML = "$" + 50 + "." + 0 + "" + 0;
+            }
+        })
+
+        // for cart reset
+        let resetcart = document.getElementById('resetcart');
+        resetcart.addEventListener('click', (e) => {
+            cartquantity.value = 1;
+            cartprice.innerHTML = "$" + 50 + "." + 0 + "" + 0;
+        })
+
+
+        // for view more 
+        // let viewmore1 = document.getElementById('viewmore1');
+        // let viewmore2 = document.getElementById('viewmore2');
+        // let tohide = document.getElementById('tohide');
+        // tohide.addEventListener('click', (e) => {
+        //     e.preventDefault();
+        //     viewmore1.style.display = 'none';
+        //     viewmore2.style.display = 'none';
+        //     tohide.innerHTML='DblClickToUnhide';
+        // })
+
+        // tohide.addEventListener('dblclick', (e) => {
+        //     e.preventDefault();
+        //     viewmore1.style.display = 'block';
+        //     viewmore2.style.display = 'block';
+        //     tohide.innerHTML='Tohide';
+        // })
+        
+        // let toviewmore=document.getElementById('toviewmore');
+        // toviewmore.addEventListener('click',(e)=>{
+        //     e.preventDefault();
+        //     viewmore1.style.display='block';
+        // })
+
+    </script>
+
+<script src="jquery.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('#hide').click(function(){
+            $('.viewmore').hide(2000);
+        })
+        $('#unhide').click(function(){
+            $('.viewmore').show(2000);
+        })
+    })
+</script>
+
+
+</body>
+
+</html>
